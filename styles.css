@@ -106,6 +106,7 @@ a {
             border-radius: 10px;
             max-width: 100%;
             height: auto;
+            text-align:center;
         }
 
         .testimonial-video {
