@@ -62,7 +62,14 @@ a {
     border-radius: 5px;
 }
 
- /* Estilos para el botón promocional */
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
         .promo-button {
             background-color: #007bff;
             color: white;
@@ -71,6 +78,8 @@ a {
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .promo-button:hover {
@@ -78,21 +87,27 @@ a {
             transform: scale(1.1);
         }
 
-        /* Estilos para los videos de testimonios */
-        .testimonial-video {
-            border: 3px solid #007bff;
-            padding: 10px;
-            margin: 20px 0;
-        }
-
-        /* Estilos para las imágenes de testimonios */
-        .testimonial-image {
-            border: 3px solid #007bff;
-            padding: 10px;
+        .testimonial {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin: 20px 0;
             display: inline-block;
+            text-align: left;
         }
 
-a:hover {
-    background-color: #555;
-}
+        .testimonial h2 {
+            color: #007bff;
+        }
+
+        .testimonial-video video,
+        .testimonial-image img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .testimonial-video {
+            margin-bottom: 20px;
+        }
