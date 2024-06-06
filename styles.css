@@ -112,3 +112,33 @@ a {
         .testimonial-video {
             margin-bottom: 20px;
         }
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    max-width: 100%;
+}
+
+.testimonial-card iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
