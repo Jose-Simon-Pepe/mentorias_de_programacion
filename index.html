@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentoría para Programadores</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .testimonial-card {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mentoría para Programadores</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .testimonial-card {
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -16,19 +16,16 @@
             text-align: center;
             transition: transform 1s;
             width: 250px;
-        }
-
-        .testimonial-card:hover {
+            }
+            .testimonial-card:hover {
             transform: scale(1.1);
-        }
-
-        .testimonial-card img {
+            }
+            .testimonial-card img {
             border-radius: 10px;
             max-width: 100%;
             height: auto;
-        }
-
-        .carousel {
+            }
+            .carousel {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,14 +34,12 @@
             max-width: 800px;
             margin: 0 auto;
             position: relative;
-        }
-
-        .carousel-inner {
+            }
+            .carousel-inner {
             display: flex;
             transition: transform 1s ease;
-        }
-
-        .carousel-arrow {
+            }
+            .carousel-arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -54,151 +49,147 @@
             padding: 10px;
             cursor: pointer;
             z-index: 1;
-        }
-
-        .carousel-arrow.left {
+            }
+            .carousel-arrow.left {
             left: 10px;
-        }
-
-        .carousel-arrow.right {
+            }
+            .carousel-arrow.right {
             right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mentoría para Programadores</h1>
-    </header>
-    
-    <section id="pas">
-        <h2>Que obtenes</h2>
-        <article id="problem">
-            <h3>Vos ahora</h3>
-            <p>Acabas de iniciar con programación y la universidad te está sobre-exigiendo.</p>
-            <p>Entregas entre 1 y 3 TPs semanales, de los cuales no entendiste ni la mitad.</p>
-            <p>Si trabajas, notas que el cansancio te quita capacidad de estudio.</p>
-        </article>
-        <article id="agitation">
-            <h3>Lo que no tiene que pasarte</h3>
-            <p>Si no entregas y aprobas los trabajos prácticos ni exámenes, entonces recursarás.</p>
-            <p>Si recursas probablemente tengas los mismos profesores, las explicaciones seran las mismas.</p>
-            <p>El estres que te genera su mala explicacion y el poco tiempo que deja tu trabajo hace que te sea casi imposible concentrarte en estudiar y entender.</p>
-        </article>
-        <article id="solution">
-            <h3>Vos junto a mis mentorias</h3>
-            <p>Vas a INTRODUCIRTE de manera agradable y adaptada a la programacion.</p>
-            <p>Vas a ser escuchado para luego obtener un plan para estudiar y ser acompañado por tu mentor en el camino.</p>
-            <p>Vas a lograr entender y aprobar en tiempo y forma, por lo menos los TPs y examenes mas importantes.</p>
-        </article>
-    </section>
-    
-    <section id="benefits">
-        <h2>Toma ventaja de otros estudiantes</h2>
-        <p>Otros estan bajo otras propuestas, sean profesores particulares, u otros profesores universitarios.</p>
-        <p>Te puedo ayudar mejor que ellos, si buscas lo siguiente:</p>
-        <ul>
-            <li>Atención personalizada y adaptada a tus necesidades.</li>
-            <li>Horarios flexibles, incluyendo fines de semana, y turno noche.</li>
-            <li>Más práctica y ejemplos reales frente a teoría pura.</li>
-            <li>Feedback continuo y detallado sobre tu progreso (vas a ver como dejas atras el desconocimiento).</li>
-            <li>Acceso a recursos hechos para vos.</li>
-        </ul>
-        <button class="promo-button" onclick="location.href='https://api.whatsapp.com/send/?phone=5491128688983&text=Mentoria&type=phone_number&app_absent=0'">¡Contactame y reserva una entrevista gratis!</button>
-    </section>
-
-
-
-    <section id="testimonial-carousel">
-        <h2>Testimonios en Imágenes</h2>
-        <div class="carousel">
-            <button class="carousel-arrow left" onclick="previousSlide()">&#10094;</button>
-            <div class="carousel-inner" id="carousel-inner">
-                <div class="testimonial-card">
-                    <h3>Testimonio de Lucia</h3>
-                    <img src="assets/restimonial_1.jpeg" alt="Testimonio de Lucia">
-                    <p>Lucia logro comprender lo que en clase la atrasaba.</p>
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Mentoría para Programadores</h1>
+        </header>
+        <section id="pas">
+            <h2>Que obtenes</h2>
+            <article id="problem">
+                <h3>Vos ahora</h3>
+                <p>Acabas de iniciar con programación y la universidad te está sobre-exigiendo.</p>
+                <p>Entregas entre 1 y 3 TPs semanales, de los cuales no entendiste ni la mitad.</p>
+                <p>Si trabajas, notas que el cansancio te quita capacidad de estudio.</p>
+            </article>
+            <article id="agitation">
+                <h3>Lo que no tiene que pasarte</h3>
+                <p>Si no entregas y aprobas los trabajos prácticos ni exámenes, entonces recursarás.</p>
+                <p>Si recursas probablemente tengas los mismos profesores, las explicaciones seran las mismas.</p>
+                <p>El estres que te genera su mala explicacion y el poco tiempo que deja tu trabajo hace que te sea casi imposible concentrarte en estudiar y entender.</p>
+            </article>
+            <article id="solution">
+                <h3>Vos junto a mis mentorias</h3>
+                <p>Vas a INTRODUCIRTE de manera agradable y adaptada a la programacion.</p>
+                <p>Vas a ser escuchado para luego obtener un plan para estudiar y ser acompañado por tu mentor en el camino.</p>
+                <p>Vas a lograr entender y aprobar en tiempo y forma, por lo menos los TPs y examenes mas importantes.</p>
+            </article>
+        </section>
+        <section id="benefits">
+            <h2>Toma ventaja de otros estudiantes</h2>
+            <p>Otros estan bajo otras propuestas, sean profesores particulares, u otros profesores universitarios.</p>
+            <p>Te puedo ayudar mejor que ellos, si buscas lo siguiente:</p>
+            <ul>
+                <li>Atención personalizada y adaptada a tus necesidades.</li>
+                <li>Horarios flexibles, incluyendo fines de semana, y turno noche.</li>
+                <li>Más práctica y ejemplos reales frente a teoría pura.</li>
+                <li>Feedback continuo y detallado sobre tu progreso (vas a ver como dejas atras el desconocimiento).</li>
+                <li>Acceso a recursos hechos para vos.</li>
+            </ul>
+            <button class="promo-button" onclick="location.href='https://api.whatsapp.com/send/?phone=5491128688983&text=Mentoria&type=phone_number&app_absent=0'">¡Contactame y reserva una entrevista gratis!</button>
+        </section>
+        <section id="testimonial-carousel">
+            <h2>Testimonios en Imágenes</h2>
+            <div class="carousel">
+                <button class="carousel-arrow left" onclick="previousSlide()">&#10094;</button>
+                <div class="carousel-inner" id="carousel-inner">
+                    <div class="testimonial-card">
+                        <h3>Testimonio de Lucia</h3>
+                        <img src="assets/restimonial_1.jpeg" alt="Testimonio de Lucia">
+                        <p>Lucia logro comprender lo que en clase la atrasaba.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Testimonio de Juan</h3>
+                        <img src="assets/testimonial_2.png" alt="Testimonio de Juan">
+                        <p>Juan conocio los conceptos que faltaban para seguir su tecnicatura.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Testimonio de Martin</h3>
+                        <img src="assets/Screenshot 2024-05-31 at 21-08-55 NO NECESITAS SABER TODO PARA EMPEZAR A DESARROLLAR Área de Estudio 01.png" alt="Testimonio de Martin">
+                        <p>Martin ha disfrutado una explicacion en video que grabe.</p>
+                    </div>
+                    <!-- Agrega más tarjetas según sea necesario -->
                 </div>
-                <div class="testimonial-card">
-                    <h3>Testimonio de Juan</h3>
-                    <img src="assets/testimonial_2.png" alt="Testimonio de Juan">
-                    <p>Juan conocio los conceptos que faltaban para seguir su tecnicatura.</p>
-                </div>
-                <div class="testimonial-card">
-                    <h3>Testimonio de Martin</h3>
-                    <img src="assets/Screenshot 2024-05-31 at 21-08-55 NO NECESITAS SABER TODO PARA EMPEZAR A DESARROLLAR Área de Estudio 01.png" alt="Testimonio de Martin">
-                    <p>Martin ha disfrutado una explicacion en video que grabe.</p>
-                </div>
-                
-                <!-- Agrega más tarjetas según sea necesario -->
+                <button class="carousel-arrow right" onclick="nextSlide()">&#10095;</button>
             </div>
-            <button class="carousel-arrow right" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </section>
-
-    <section id="testimonial-carousel">
-    <h2>Conoce mi forma de enseñar publicamente</h2>
-    <div class="carousel" id="video-carousel">
-        <!-- Embedded YouTube videos will be added here -->
-        <div class="testimonial-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2H_oyKTYyQs?si=PJeNSIIK0gH5FPl1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr00dM5QjFo?si=zvWBqMRk_WFJPWL5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9wTGvzK1SFU?si=0S-TRxlvy2Iz7oXe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nKM8AN7aScg?si=4rLoTUl8grC8yPIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fjFoqbflc-M?si=dI-6X3s6s2v9qXtX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-    </div>
-</section>
-
-    
-    <section id="learning-plans">
-        <h2>Planes de Aprendizaje</h2>
-        <article id="good-student">
-            <h3>Buen Estudiante</h3>
-            <p>Enfocado solo en aprobar todo en la universidad.</p>
-            <p>Me informas en que universidad y carrera/tecnicatura estas, fechas de examen y modalidades, y yo te preparo para cada uno de esos examenes, simulaciones incluidas!.</p>
-        </article>
-        <article id="good-developer">
-            <h3>Buen Desarrollador</h3>
-            <p>Enfocado en aprobar todo en la universidad, y principalmente convertirse en un desarrollador backend Junior desde el punto de partida actual.</p>
-        </article>
-        <button class="promo-button" onclick="location.href='https://api.whatsapp.com/send/?phone=5491128688983&text=Mentoria&type=phone_number&app_absent=0'">¡Contactame y pedime que plan necesitas!</button>
-    </section>
-    
-    <section id="download">
-        <h2>Descargar Plan de Estudio</h2>
-        <p>Puedes descargar el plan de estudio estándar para desarrollador backend Junior en el siguiente enlace:</p>
-        <a href="propuesta_programacion.pdf" download>Descargar Plan de Estudio</a>
-    </section>
-
-    <script>
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            const carouselInner = document.getElementById('carousel-inner');
-            const cardWidth = carouselInner.children[0].offsetWidth;
-            carouselInner.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
-        }
-
-        function nextSlide() {
-            const carouselInner = document.getElementById('carousel-inner');
-            if (currentIndex < carouselInner.children.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0;
+        </section>
+        <section id="testimonial-carousel">
+            <h2>Conoce mi forma de enseñar publicamente</h2>
+            <div class="carousel" id="video-carousel">
+                <!-- Embedded YouTube videos will be added here -->
+                <div class="testimonial-card">
+                    <div class="carousel" id="video-carousel">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2H_oyKTYyQs?si=PJeNSIIK0gH5FPl1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="carousel" id="video-carousel">
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr00dM5QjFo?si=zvWBqMRk_WFJPWL5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="carousel" id="video-carousel">
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9wTGvzK1SFU?si=0S-TRxlvy2Iz7oXe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="carousel" id="video-carousel">
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nKM8AN7aScg?si=4rLoTUl8grC8yPIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel" id="video-carousel">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fjFoqbflc-M?si=dI-6X3s6s2v9qXtX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="learning-plans">
+            <h2>Planes de Aprendizaje</h2>
+            <article id="good-student">
+                <h3>Buen Estudiante</h3>
+                <p>Enfocado solo en aprobar todo en la universidad.</p>
+                <p>Me informas en que universidad y carrera/tecnicatura estas, fechas de examen y modalidades, y yo te preparo para cada uno de esos examenes, simulaciones incluidas!.</p>
+            </article>
+            <article id="good-developer">
+                <h3>Buen Desarrollador</h3>
+                <p>Enfocado en aprobar todo en la universidad, y principalmente convertirse en un desarrollador backend Junior desde el punto de partida actual.</p>
+            </article>
+            <button class="promo-button" onclick="location.href='https://api.whatsapp.com/send/?phone=5491128688983&text=Mentoria&type=phone_number&app_absent=0'">¡Contactame y pedime que plan necesitas!</button>
+        </section>
+        <section id="download">
+            <h2>Descargar Plan de Estudio</h2>
+            <p>Puedes descargar el plan de estudio estándar para desarrollador backend Junior en el siguiente enlace:</p>
+            <a href="propuesta_programacion.pdf" download>Descargar Plan de Estudio</a>
+        </section>
+        <script>
+            let currentIndex = 0;
+            
+            function updateCarousel() {
+                const carouselInner = document.getElementById('carousel-inner');
+                const cardWidth = carouselInner.children[0].offsetWidth;
+                carouselInner.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
             }
-            updateCarousel();
-        }
-
-        function previousSlide() {
-            const carouselInner = document.getElementById('carousel-inner');
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = carouselInner.children.length - 1;
+            
+            function nextSlide() {
+                const carouselInner = document.getElementById('carousel-inner');
+                if (currentIndex < carouselInner.children.length - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateCarousel();
             }
-            updateCarousel();
-        }
-    </script>
-</body>
+            
+            function previousSlide() {
+                const carouselInner = document.getElementById('carousel-inner');
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = carouselInner.children.length - 1;
+                }
+                updateCarousel();
+            }
+        </script>
+    </body>
 </html>
